@@ -1,0 +1,24 @@
+COMPOSER_CARD=restadmin@trade-network
+COMPOSER_NAMESPACES=never
+COMPOSER_AUTHENTICATION=true
+DEBUG=composer:*:*
+COMPOSER_MULTIUSER=true
+COMPOSER_PROVIDERS='{
+    "oauth2": {
+        "provider": "oauth2",
+        "clientID": "dibre",
+        "module": "passport-oauth2",
+        "clientSecret": "ronaldinho",
+        "authPath": "/auth/mitonobarca",
+        "callbackURL": "http://localhost:3000/explorer/#/Wallet",
+        "tokenURL": "http://localhost:3200/api/auth/request_token",
+        "authorizationURL": "http://localhost:3200/api/oauth2/authorize"
+    }
+}'
+COMPOSER_DATASOURCES='{
+    "db": {
+        "name": "db",
+        "connector": "mongodb",
+        "host": "mongo"
+    }
+}'

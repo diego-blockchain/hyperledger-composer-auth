@@ -1,0 +1,5 @@
+participantId=gangachris
+firstName=chris
+lastName=ganga
+PARTICIPANT_CLASS=org.example.biznet.SampleParticipant
+participantData="{\"\$class\": \"${PARTICIPANT_CLASS}\", \"participantId\": \"${participantId}\", \"firstName\": \"${firstName}\", \"lastName\": \"${lastName}\"}"
